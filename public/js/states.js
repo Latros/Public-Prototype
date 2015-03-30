@@ -1,23 +1,21 @@
 (function () {
   'use strict';
 
-  Prototype.config(function ($stateProvider) {
+  angular.module('Prototype')
+    .config(function ($stateProvider) {
 
-    $stateProvider.state('', {
-      url: '/',
-      templateUrl: '/templates/.template.html',
-      controllerAs: 'Ctrl',
-      resolve: {
-        thing: function () {
-          return true;
+      $stateProvider.state('index', {
+        url: '/',
+        templateUrl: '/templates/index.template.html',
+        resolve: {
+          thing: function () {
+            return true;
+          }
+        },
+        controller: function ($scope, thing) {
+          $scope.thing = thing;
         }
-      },
-      controller: function (thing) {
-        var ctrl = this;
-        ctrl.thing = thing;
-        window.HomeController = ctrl;
-      }
-    });
+      });
 
-  });
+    });
 })();

@@ -1,11 +1,12 @@
 (function () {
   'use strict';
 
-  Prototype.service('StateDebugListener', function () {
-    return {
+  angular.module('Prototype')
+    .service('StateDebugListener', function () {
+      return {
 
-      name: function () {}
+        name: function () {}
 
-    };
-  });
+      };
+    });
 })();

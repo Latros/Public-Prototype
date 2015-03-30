@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Prototype Public UI</title>
+  <link rel="stylesheet" href="dependencies/materialize/dist/css/materialize.css">
 </head>
 <body ng-app="Prototype">
 
+  <div ui-view></div>
+
+  <!-- Dependencies -->
+  <script type="text/javascript" src="dependencies/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="dependencies/materialize/dist/js/materialize.js"></script>
+  <script type="text/javascript" src="dependencies/angular/angular.js"></script>
+  <script type="text/javascript" src="dependencies/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="dependencies/angular-material/angular-material.js"></script>
+  <script type="text/javascript" src="dependencies/angular-animate/angular-animate.js"></script>
+  <script type="text/javascript" src="dependencies/angular-aria/angular-aria.js"></script>
+
+  <!-- Source -->
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/directives.js"></script>
+  <script type="text/javascript" src="js/models.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/states.js"></script>
 </body>
 </html>
