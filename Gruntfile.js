@@ -28,10 +28,28 @@ module.exports = function (grunt) {
       dist: {
         src: ['public/js/prototype/**/*.js'],
         dest: 'public/js/scripts.js'
+      },
+      dependencies: {
+        src: ['public/dependencies/angular/angular.js',
+          'public/dependencies/angular-ui-router/release/angular-ui-router.js',
+          'public/dependencies/jquery/dist/jquery.js',
+          'public/dependencies/materialize/dist/js/materialize.js'
+        ],
+        dest: 'public/js/dependencies.js'
       }
     },
 
-    clean: ['public/js/scripts.js', 'public/css/styles.css']
+    clean: ['public/js/scripts.js', 'public/css/styles.css'],
+
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: 'public',
+          livereload: true
+        }
+      }
+    }
 
   });
 
@@ -39,6 +57,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('go', ['clean', 'less', 'concat', 'watch']);
+  grunt.registerTask('go', ['clean', 'less', 'concat', 'connect', 'watch']);
 };
