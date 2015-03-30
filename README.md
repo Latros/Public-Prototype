@@ -11,7 +11,7 @@ Before you can get this project set up to run locally on your machine, you need 
 * Once node is installed, you can install the remaining tools required by running the following commands:
   * `sudo npm install -g grunt grunt-cli bower`
 
-Once you have the above tools installed, you can get the project up and running by following the steps below.
+Once you have the above tools installed (and you restart your terminal), you can get the project up and running by following the steps below.
 
 * Clone this repository by running `git clone https://SamuelDev@bitbucket.org/eyesover/eyesover-public-prototype.git`
 * Go into your newly cloned directory with `cd eyesover-public-prototype`
