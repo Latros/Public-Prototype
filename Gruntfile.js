@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         tasks: ['less']
       },
       js: {
-        files: ['public/js/prototype/**/*.js'],
+        files: ['public/js/**/*.js'],
         tasks: ['concat:dist']
       }
     },
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         separator: '\n\n// --------- Next import... ---------\n\n',
       },
       dist: {
-        src: ['public/js/prototype/**/*.js'],
+        src: ['public/js/prototype/init.js', 'public/js/prototype/**/*.js'],
         dest: 'public/concatenated/scripts.js'
       },
       jsDependencies: {
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
         options: {
           port: 9001,
           base: 'public',
-          livereload: true
+          livereload: false
         }
       }
     },
