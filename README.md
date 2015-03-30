@@ -13,8 +13,9 @@ Before you can get this project set up to run locally on your machine, you need 
 
 Once you have the above tools installed (and you restart your terminal), you can get the project up and running by following the steps below.
 
-* Clone this repository by running `git clone https://SamuelDev@bitbucket.org/eyesover/eyesover-public-prototype.git`
-* Go into your newly cloned directory with `cd eyesover-public-prototype`
+* Open up your terminal and navigate to whatever folder you will be working in
+* Clone this repository (button in the top right of this page: http://puu.sh/gVDn4/7eeb7be7b8.png)
+* Navigate to your newly cloned directory in your terminal with `cd eyesover-public-prototype`
 * Once you are in the directory,
   * install the NPM dependencies that are required (as defined in `package.json`) by running `npm install`
   * install the Bower dependencies that are required (as defined in `bower.json`) by running `bower install`
