@@ -9,14 +9,14 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['public/js/prototype/**/*.js'],
-        tasks: ['concat']
+        tasks: ['concat:dist']
       }
     },
 
     less: {
       development: {
         files: {
-          "public/css/styles.css": "public/css/**/*.less"
+          "public/concatenated/styles.css": "public/css/**/*.less"
         }
       }
     },
@@ -27,7 +27,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: ['public/js/prototype/**/*.js'],
-        dest: 'public/js/scripts.js'
+        dest: 'public/concatenated/scripts.js'
       },
       jsDependencies: {
         src: ['public/dependencies/angular/angular.js',
@@ -35,11 +35,11 @@ module.exports = function (grunt) {
           'public/dependencies/jquery/dist/jquery.js',
           'public/dependencies/materialize/dist/js/materialize.js'
         ],
-        dest: 'public/js/dependencies.js'
+        dest: 'public/concatenated/dependencies.js'
       },
       cssDependencies: {
         src: ['public/dependencies/materialize/dist/css/materialize.css'],
-        dest: 'public/css/dependencies.css'
+        dest: 'public/concatenated/dependencies.css'
       }
     },
 
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
       },
     },
 
-    clean: ['public/js/scripts.js', 'public/css/styles.css', 'public/font/**/*.*']
+    clean: ['public/js/scripts.js', 'public/css/styles.css', 'public/font/**/*.*', 'public/concatenated/**/*.*']
 
   });
 
