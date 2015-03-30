@@ -31,11 +31,14 @@ module.exports = function (grunt) {
       }
     },
 
+    clean: ['public/js/scripts.js', 'public/css/styles.css']
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('go', ['watch']);
+  grunt.registerTask('go', ['clean', 'less', 'concat', 'watch']);
 };
