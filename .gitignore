@@ -1,7 +1,4 @@
 
 node_modules
 dependencies
-public/css/styles.css
-public/css/dependencies.css
-public/js/scripts.js
-public/js/dependencies.js
+concatenated
