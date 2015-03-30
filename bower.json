@@ -1,0 +1,10 @@
+{
+  "name": "Eyesover Public Prototype",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Sam Stiles <samuel.dev.stiles@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true
+}
