@@ -11,5 +11,9 @@
     "url": "https://samuel_stiles@bitbucket.org/eyesover/eyesover-public-prototype.git"
   },
   "author": "EyesOver Team",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "serve-static": "^1.9.2"
+  }
 }
