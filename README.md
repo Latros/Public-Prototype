@@ -8,7 +8,7 @@ This is the repo for the public-facing "eyesover" (soon to be re-named?) UI.
 Before you can get this project set up to run locally on your machine, you need to have `node`, `bower`, `grunt`, and `grunt-cli` installed on your system.
 
 * Install node here: https://nodejs.org/
-* Once node is installed, you can install the remaining tools required by running the following commands:
+* Once node is installed, you can install the remaining tools required by running the following command:
   * `sudo npm install -g grunt grunt-cli bower`
 
 Once you have the above tools installed (and you restart your terminal), you can get the project up and running by following the steps below.
