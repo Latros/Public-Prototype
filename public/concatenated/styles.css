@@ -1,0 +1,21 @@
+.btn,
+.btn-large,
+.btn-flat {
+  margin-bottom: 0;
+}
+
+nav {
+  position: relative;
+}
+nav .logo p {
+  letter-spacing: -2px;
+  margin: 0 0 0 15px;
+  font-weight: 200;
+  font-size: 36px;
+}
+nav .nav-wrapper {
+  margin-right: 15px;
+}
+nav .nav-wrapper ul li.spaced {
+  padding: 0 10px;
+}

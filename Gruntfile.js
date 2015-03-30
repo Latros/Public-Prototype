@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         separator: '\n\n// --------- Next import... ---------\n\n',
       },
       dist: {
-        src: ['public/js/prototype/init.js', 'public/js/prototype/**/*.js'],
+        src: ['public/js/init.js', 'public/js/**/*.js'],
         dest: 'public/concatenated/scripts.js'
       },
       jsDependencies: {
@@ -55,13 +55,20 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      develpment: {
+      roboto: {
         expand: true,
         flatten: true,
         filter: 'isFile',
         src: 'public/dependencies/materialize/dist/font/roboto/**/*.*',
         dest: 'public/font/roboto/'
       },
+      material: {
+        expand: true,
+        flatten: true,
+        filter: 'isFile',
+        src: 'public/dependencies/materialize/dist/font/material-design-icons/**/*.*',
+        dest: 'public/font/material-design-icons/'
+      }
     },
 
     clean: ['public/js/scripts.js', 'public/css/styles.css', 'public/font/**/*.*', 'public/concatenated/**/*.*']
