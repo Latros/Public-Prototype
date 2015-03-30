@@ -17,8 +17,8 @@ Once you have the above tools installed (and you restart your terminal), you can
 * Clone this repository (button in the top right of this page: http://puu.sh/gVDn4/7eeb7be7b8.png)
 * Navigate to your newly cloned directory in your terminal with `cd eyesover-public-prototype`
 * Once you are in the directory,
-  * install the NPM dependencies that are required (as defined in `package.json`) by running `npm install`
-  * install the Bower dependencies that are required (as defined in `bower.json`) by running `bower install`
+    * install the NPM dependencies that are required (as defined in `package.json`) by running `npm install`
+    * install the Bower dependencies that are required (as defined in `bower.json`) by running `bower install`
 
 
 ### How do I run a local development copy of this app? ###
