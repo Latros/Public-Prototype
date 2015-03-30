@@ -29,17 +29,20 @@ module.exports = function (grunt) {
         src: ['public/js/prototype/**/*.js'],
         dest: 'public/js/scripts.js'
       },
-      dependencies: {
+      jsDependencies: {
         src: ['public/dependencies/angular/angular.js',
           'public/dependencies/angular-ui-router/release/angular-ui-router.js',
           'public/dependencies/jquery/dist/jquery.js',
           'public/dependencies/materialize/dist/js/materialize.js'
         ],
         dest: 'public/js/dependencies.js'
+      },
+      cssDependencies: {
+        src: ['public/dependencies/materialize/dist/css/materialize.css'],
+        dest: 'public/css/dependencies.css'
       }
     },
 
-    clean: ['public/js/scripts.js', 'public/css/styles.css'],
 
     connect: {
       server: {
@@ -49,7 +52,19 @@ module.exports = function (grunt) {
           livereload: true
         }
       }
-    }
+    },
+
+    copy: {
+      develpment: {
+        expand: true,
+        flatten: true,
+        filter: 'isFile',
+        src: 'public/dependencies/materialize/dist/font/roboto/**/*.*',
+        dest: 'public/font/roboto/'
+      },
+    },
+
+    clean: ['public/js/scripts.js', 'public/css/styles.css', 'public/font/**/*.*']
 
   });
 
@@ -58,6 +73,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('go', ['clean', 'less', 'concat', 'connect', 'watch']);
+  grunt.registerTask('go', ['clean', 'copy', 'less', 'concat', 'connect', 'watch']);
 };

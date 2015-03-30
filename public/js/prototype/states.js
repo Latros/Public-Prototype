@@ -6,7 +6,7 @@
 
       $stateProvider.state('index', {
         url: '/',
-        templateUrl: '/templates/index.template.html',
+        templateUrl: '/html/pages/index.page.html',
         resolve: {
           thing: function () {
             return true;

@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('Prototype', ['ui.router', 'ngMaterial']);
+  angular.module('Prototype', ['ui.router']);
 
   angular.module('Prototype')
     .run(function ($rootScope) {
