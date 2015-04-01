@@ -1,0 +1,36 @@
+<div class="blog-card">
+  <i class="card-style valign-wrapper">
+    <i class="fa fa-rss valign"></i>
+  </i>
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" ng-src="{{ post.primaryImageLarge }}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+        {{ post.shortTitle }}
+        <i class="mdi-navigation-more-vert right"></i>
+      </span>
+      <p>{{ post.shortContent }}</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">
+        <span class="card-source-domain">via <a ng-href="{{ post.sourceDomain }}">{{ post.sourceDomain }}</a></span>
+        {{ post.title }}
+        <i class="mdi-navigation-close right"></i>
+      </span>
+
+      {{ post.content }}
+
+      <div class="card-actions">
+        <div class="card-actions-left">
+          <a ng-href="{{ post.sourceUrl }}" target="_blank" class="waves-effect waves-light btn primary-color white-text">Article Source</a>
+        </div>
+        <div class="card-actions-divider"></div>
+        <div class="card-actions-right">
+          <a href="#" class="dropdown-button btn waves-light primary-color waves-effect white-text"><i class="mdi-social-share left"></i>Share</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

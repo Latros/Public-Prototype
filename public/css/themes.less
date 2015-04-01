@@ -1,6 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * *
  *                                       *
- *    Theme Ambiguous Utility Colors     *
+ *    Theme-Ambiguous Utility Colors     *
  *                                       *
  * * * * * * * * * * * * * * * * * * * * */
 
@@ -14,7 +14,7 @@
  @white-darken-3: darken(@white, 15%);
 
  // Oranges for RSS
- @rss-orange: #ff5722;
+ @rss-orange: #ff9800;
  @rss-orange-lighten-1: lighten(@rss-orange, 5%);
  @rss-orange-lighten-2: lighten(@rss-orange, 10%);
  @rss-orange-lighten-3: lighten(@rss-orange, 15%);
@@ -24,61 +24,183 @@
 
 /* * * * * * * * * * * * * *
  *                         *
- * Blue/Grey Theme         *
+ *     -- Theme #1 --      *
+ *       Blue/ Grey        *
  *                         *
  * * * * * * * * * * * * * */
-body.theme-1 {
+html body.theme-1 {
   // Color variables for use in LESS files
-  @primary-color: #607d8b;
-  @primary-color-lighten-1: #78909c;
-  @primary-color-lighten-2: #90a4ae;
-  @primary-color-lighten-3: #b0bec5;
-  @primary-color-lighten-4: #cfd8dc;
-  @primary-color-lighten-5: #eceff1;
-  @primary-color-darken-1: #546e7a;
-  @primary-color-darken-2: #455a64;
-  @primary-color-darken-3: #37474f;
-  @primary-color-darken-4: #263238;
-
+  @primary-color: #607d8b !important;
+  @primary-color-lighten-1: #78909c !important;
+  @primary-color-lighten-2: #90a4ae !important;
+  @primary-color-lighten-3: #b0bec5 !important;
+  @primary-color-lighten-4: #cfd8dc !important;
+  @primary-color-lighten-5: #eceff1 !important;
+  @primary-color-darken-1: #546e7a !important;
+  @primary-color-darken-2: #455a64 !important;
+  @primary-color-darken-3: #37474f !important;
+  @primary-color-darken-4: #263238 !important;
 
   // Color classes for use in HTML templates
-  .primary-color: {
-    background-color: @primary-color !important;
+  .primary-color {
+    background-color: @primary-color;
+  }
 
-    &.lighten-1 {
-      background-color: @primary-color-lighten-1 !important;
-    }
+  .primary-color-lighten-1 {
+    background-color: @primary-color-lighten-1;
+  }
 
-    &.lighten-2 {
-      background-color: @primary-color-lighten-1 !important;
-    }
+  .primary-color-lighten-2 {
+    background-color: @primary-color-lighten-1;
+  }
 
-    &.lighten-3 {
-      background-color: @primary-color-lighten-1 !important;
-    }
+  .primary-color-lighten-3 {
+    background-color: @primary-color-lighten-1;
+  }
 
-    &.lighten-4 {
-      background-color: @primary-color-lighten-1 !important;
-    }
+  .primary-color-lighten-4 {
+    background-color: @primary-color-lighten-1;
+  }
 
-    &.lighten-5 {
-      background-color: @primary-color-lighten-1 !important;
-    }
+  .primary-color-lighten-5 {
+    background-color: @primary-color-lighten-1;
+  }
 
-    &.darken-1 {
-      background-color: @primary-color-darken-1 !important;
-    }
+  .primary-color-darken-1 {
+    background-color: @primary-color-darken-1;
+  }
 
-    &.darken-2 {
-      background-color: @primary-color-darken-1 !important;
-    }
+  .primary-color-darken-2 {
+    background-color: @primary-color-darken-1;
+  }
 
-    &.darken-3 {
-      background-color: @primary-color-darken-1 !important;
-    }
+  .primary-color-darken-3 {
+    background-color: @primary-color-darken-1;
+  }
 
-    &.darken-4 {
-      background-color: @primary-color-darken-1 !important;
-    }
+  .primary-color-darken-4 {
+    background-color: @primary-color-darken-1;
+  }
+}
+
+/* * * * * * * * * * * * * *
+ *                         *
+ *     -- Theme #2 --      *
+ *         Green           *
+ *                         *
+ * * * * * * * * * * * * * */
+html body.theme-2 {
+  // Color variables for use in LESS files
+  @primary-color: #4caf50 !important;
+  @primary-color-lighten-1: #66bb6a !important;
+  @primary-color-lighten-2: #81c784 !important;
+  @primary-color-lighten-3: #a5d6a7 !important;
+  @primary-color-lighten-4: #c8e6c9 !important;
+  @primary-color-lighten-5: #e8f5e9 !important;
+  @primary-color-darken-1: #43a047 !important;
+  @primary-color-darken-2: #388e3c !important;
+  @primary-color-darken-3: #2e7d32 !important;
+  @primary-color-darken-4: #1b5e20 !important;
+
+  // Color classes for use in HTML templates
+  .primary-color {
+    background-color: @primary-color;
+  }
+
+  .primary-color-lighten-1 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-2 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-3 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-4 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-5 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-darken-1 {
+    background-color: @primary-color-darken-1;
+  }
+
+  .primary-color-darken-2 {
+    background-color: @primary-color-darken-1;
+  }
+
+  .primary-color-darken-3 {
+    background-color: @primary-color-darken-1;
+  }
+
+  .primary-color-darken-4 {
+    background-color: @primary-color-darken-1;
+  }
+}
+
+/* * * * * * * * * * * * * *
+ *                         *
+ *     -- Theme #3 --      *
+ *          Red            *
+ *                         *
+ * * * * * * * * * * * * * */
+html body.theme-3 {
+  // Color variables for use in LESS files
+  @primary-color: #f44336 !important;
+  @primary-color-lighten-1: #ef5350 !important;
+  @primary-color-lighten-2: #e57373 !important;
+  @primary-color-lighten-3: #ef9a9a !important;
+  @primary-color-lighten-4: #ffcdd2 !important;
+  @primary-color-lighten-5: #ffebee !important;
+  @primary-color-darken-1: #e53935 !important;
+  @primary-color-darken-2: #d32f2f !important;
+  @primary-color-darken-3: #c62828 !important;
+  @primary-color-darken-4: #b71c1c !important;
+
+  // Color classes for use in HTML templates
+  .primary-color {
+    background-color: @primary-color;
+  }
+
+  .primary-color-lighten-1 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-2 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-3 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-4 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-lighten-5 {
+    background-color: @primary-color-lighten-1;
+  }
+
+  .primary-color-darken-1 {
+    background-color: @primary-color-darken-1;
+  }
+
+  .primary-color-darken-2 {
+    background-color: @primary-color-darken-1;
+  }
+
+  .primary-color-darken-3 {
+    background-color: @primary-color-darken-1;
+  }
+
+  .primary-color-darken-4 {
+    background-color: @primary-color-darken-1;
   }
 }
