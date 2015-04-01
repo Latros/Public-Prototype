@@ -1,11 +1,33 @@
+/* * * * * * * * * * * * * * * * * * * * *
+ *                                       *
+ *    Theme Ambiguous Utility Colors     *
+ *                                       *
+ * * * * * * * * * * * * * * * * * * * * */
 
-// Blue/Grey Theme
+ // General whites and off-whites
+ @white: #ffffff;
+ @white-lighten-1: lighten(@white, 5%);
+ @white-lighten-2: lighten(@white, 10%);
+ @white-lighten-3: lighten(@white, 15%);
+ @white-darken-1: darken(@white, 5%);
+ @white-darken-2: darken(@white, 10%);
+ @white-darken-3: darken(@white, 15%);
+
+ // Oranges for RSS
+ @rss-orange: #ff5722;
+ @rss-orange-lighten-1: lighten(@rss-orange, 5%);
+ @rss-orange-lighten-2: lighten(@rss-orange, 10%);
+ @rss-orange-lighten-3: lighten(@rss-orange, 15%);
+ @rss-orange-darken-1: darken(@rss-orange, 5%);
+ @rss-orange-darken-2: darken(@rss-orange, 10%);
+ @rss-orange-darken-3: darken(@rss-orange, 15%);
+
 /* * * * * * * * * * * * * *
  *                         *
  * Blue/Grey Theme         *
  *                         *
  * * * * * * * * * * * * * */
-body.blue-grey-theme {
+body.theme-1 {
   // Color variables for use in LESS files
   @primary-color: #607d8b;
   @primary-color-lighten-1: #78909c;

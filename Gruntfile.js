@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     less: {
       development: {
         files: {
-          "public/concatenated/styles.css": "public/css/**/*.less"
+          'public/concatenated/styles.css': ['public/css/themes.less', 'public/css/**/*.less']
         }
       }
     },
