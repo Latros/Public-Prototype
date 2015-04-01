@@ -5,12 +5,12 @@
     position: absolute;
     background: orange;
     text-align: center;
-    font-size: 35px;
-    height: 50px;
-    width: 50px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
     z-index: 2;
-    left: 0;
-    top: 0;
+    left: -12px;
+    top: 5px;
 
     .fa-rss {
       width: 100%;
@@ -18,10 +18,35 @@
   }
 
   .card-reveal {
+
     .nested-image {
+      background: darken(white, 5%);
+      border: 1px solid #eeeeee;
+      padding: 5px;
 
       img {
         max-width: 100%;
+      }
+
+      span {
+        display: block;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+
+    .card-actions {
+
+      .card-actions-left, .card-actions-right, .card-actions-divider {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .card-actions-divider {
+        border-right: 1px solid darken(white, 20%);
+        margin-right: 20px;
+        height: 35px;
+        width: 1px;
       }
     }
   }
