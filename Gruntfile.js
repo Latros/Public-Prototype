@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         dest: 'public/concatenated/dependencies.js'
       },
       cssDependencies: {
-        src: ['public/dependencies/materialize/dist/css/materialize.css', 'public/dependencies/fontawesome/css/font-awesome.min.css'],
+        src: ['public/dependencies/materialize/dist/css/materialize.css'],
         dest: 'public/concatenated/dependencies.css'
       }
     },
