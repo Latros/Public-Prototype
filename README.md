@@ -23,7 +23,9 @@ Once you have the above tools installed (and you restart your terminal), you can
 
 ### How do I run a local development copy of this app? ###
 
-Once the node and bower dependencies have successfully been installed successfully, you can run a local instance of the app simply by running the command `grunt go`. This will:
+Once the node and bower dependencies have successfully been installed successfully, you can run a local instance of the app simply by running the command `grunt go`.
+
+**This will automatically do all of the following for you:**
 
 * set up a grunt server that automatically watches for changes
 * concatenate all the JS for the project into one file (for faster page loads), `concatenated/scripts.js`
