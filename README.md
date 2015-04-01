@@ -8,16 +8,17 @@ This is the repo for the public-facing "eyesover" (soon to be re-named?) UI.
 Before you can get this project set up to run locally on your machine, you need to have `node`, `bower`, `grunt`, and `grunt-cli` installed on your system.
 
 * Install node here: https://nodejs.org/
-* Once node is installed, you can install the remaining tools required by running the following commands:
+* Once node is installed, you can install the remaining tools required by running the following command:
   * `sudo npm install -g grunt grunt-cli bower`
 
-Once you have the above tools installed, you can get the project up and running by following the steps below.
+Once you have the above tools installed (and you restart your terminal), you can get the project up and running by following the steps below.
 
-* Clone this repository by running `git clone https://SamuelDev@bitbucket.org/eyesover/eyesover-public-prototype.git`
-* Go into your newly cloned directory with `cd eyesover-public-prototype`
+* Open up your terminal and navigate to whatever folder you will be working in
+* Clone this repository (button in the top right of this page: http://puu.sh/gVDn4/7eeb7be7b8.png)
+* Navigate to your newly cloned directory in your terminal with `cd eyesover-public-prototype`
 * Once you are in the directory,
-  * install the NPM dependencies that are required (as defined in `package.json`) by running `npm install`
-  * install the Bower dependencies that are required (as defined in `bower.json`) by running `bower install`
+    * install the NPM dependencies that are required (as defined in `package.json`) by running `npm install`
+    * install the Bower dependencies that are required (as defined in `bower.json`) by running `bower install`
 
 
 ### How do I run a local development copy of this app? ###
