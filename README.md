@@ -23,15 +23,19 @@ Once you have the above tools installed (and you restart your terminal), you can
 
 ### How do I run a local development copy of this app? ###
 
-Once the node and bower dependencies have successfully been installed successfully, you can run a local instance of the app simply by running the command `grunt go`. This will:
+Once the node and bower dependencies have successfully been installed successfully, you can run a local instance of the app simply by running the command `grunt go`.
+
+**This will automatically do all of the following for you:**
 
 * set up a grunt server that automatically watches for changes
 * concatenate all the JS for the project into one file (for faster page loads), `concatenated/scripts.js`
 * compile and concatenate all the LESS for the project into one file (for faster page loads), `concatenated/styles.css`
 * copy all the *library* JS for the project into one file (for faster page loads), `concatenated/dependencies.js`
-* copy all the *library* LESS for the project into one file (for faster page loads), `concatenated/dependencies.css`
+* compile and concatenate all the *library* LESS for the project into one file (for faster page loads), `concatenated/dependencies.css`
 
-The above steps will also "watch" for any time you change a project file -- and it will re-compile and concatenate all of the necessary files into the `concatenated` folder. You can optionally set up livereload to also automatically refresh your browser if you want to see your changes happen live. I personally am not a big fan of this, so I just do the typical workflow of: make a change, alt-tab to my browser, refresh, etc. Do whatever feels best for you :)
+The above steps will also "watch" for any time you change a project file -- and it will re-compile and concatenate all of the necessary files automatically for you whenever a change is detected.
+
+You can optionally set up livereload to also automatically refresh your browser if you want to see your changes happen live. I personally am not a big fan of this, so I just do the typical workflow of: make a change, alt-tab to my browser, refresh, etc. Do whatever feels best for you :)
 
 ### Who do I talk to if I have questions? ###
 
