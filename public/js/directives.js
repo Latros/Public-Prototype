@@ -9,7 +9,7 @@
         post: '=post'
       },
       restrict: 'E',
-      templateUrl: '../html/partials/blog-card.partial.html',
+      templateUrl: '../html/partials/news-card.partial.html',
       link: function (scope, element, attributes) {}
     };
   })
