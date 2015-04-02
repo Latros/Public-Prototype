@@ -1,0 +1,118 @@
+.tweet-card {
+  position: relative;
+
+  .card-style {
+    background: @twitter-blue;
+    position: absolute;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+    left: -12px;
+    top: 5px;
+
+    .fa-twitter {
+      color: @white;
+      width: 100%;
+    }
+  }
+
+  .card {
+
+    .card-content {
+      padding: 5px 20px 10px 20px;
+
+      .card-title {
+
+        .twitter-card-title {
+          position: relative;
+          height: 50px;
+          left: 8px;
+          top: 5px;
+
+          .twc-left {
+            display: inline-block;
+            vertical-align: top;
+
+            img {
+              border-radius: 4px;
+              max-height: 38px;
+              max-width: 38px;
+            }
+          }
+
+          .twc-right {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 2px;
+
+            .username {
+              line-height: 14px;
+              font-weight: 500;
+              font-size: 14px;
+              padding: 0;
+              margin: 0;
+            }
+
+            .handle {
+              color: @white-darken-3;
+              position: relative;
+              line-height: 14px;
+              font-size: 12px;
+              top: -16px;
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .tweet-contents {
+        p {
+
+          a {
+            text-transform: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .card-action {
+      padding: 5px 10px;
+
+      .twc-left-actions, .twc-right-actions {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .twc-left-actions {
+        color: @grey-lighten-3;
+        position: relative;
+        font-size: 12px;
+        top: 6px;
+      }
+
+      .twc-right-actions {
+        position: relative;
+        top: -2px;
+
+        .btn-flat {
+          padding: 0 10px;
+          margin: 0;
+
+          i {
+            transition: all 300ms ease;
+            color: @grey;
+
+            &:hover {
+              color: @grey-darken-8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
