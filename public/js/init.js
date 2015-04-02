@@ -19,7 +19,8 @@
     });
 
   angular.module('Prototype')
-    .config(function ($urlRouterProvider) {
+    .config(function ($urlRouterProvider, $sceProvider) {
       $urlRouterProvider.otherwise('/');
+      $sceProvider.enabled(false);
     });
 })();
