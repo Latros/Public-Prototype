@@ -33,7 +33,8 @@ module.exports = function (grunt) {
         src: ['public/dependencies/angular/angular.js',
           'public/dependencies/angular-ui-router/release/angular-ui-router.js',
           'public/dependencies/jquery/dist/jquery.js',
-          'public/dependencies/materialize/dist/js/materialize.js'
+          'public/dependencies/materialize/dist/js/materialize.js',
+          'public/dependencies/underscore/underscore-min.js'
         ],
         dest: 'public/concatenated/dependencies.js'
       },
@@ -68,6 +69,13 @@ module.exports = function (grunt) {
         filter: 'isFile',
         src: 'public/dependencies/materialize/dist/font/material-design-icons/**/*.*',
         dest: 'public/font/material-design-icons/'
+      },
+      underscoreMap: {
+        expand: true,
+        flatten: true,
+        filter: 'isFile',
+        src: 'public/dependencies/underscore/underscore-min.map',
+        dest: 'public/concatenated/'
       }
     },
 
