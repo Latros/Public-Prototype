@@ -34,7 +34,8 @@ module.exports = function (grunt) {
           'public/dependencies/angular-ui-router/release/angular-ui-router.js',
           'public/dependencies/jquery/dist/jquery.js',
           'public/dependencies/materialize/dist/js/materialize.js',
-          'public/dependencies/underscore/underscore-min.js'
+          'public/dependencies/underscore/underscore-min.js',
+          'public/dependencies/masonry/dist/masonry.pkgd.min.js'
         ],
         dest: 'public/concatenated/dependencies.js'
       },
