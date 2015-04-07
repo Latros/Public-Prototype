@@ -6,7 +6,7 @@
       return {
         scope: {},
         restrict: 'E',
-        templateUrl: '../html/partials/instagram-card.partial.html',
+        templateUrl: 'components/instagram-card/instagram-card.template.html',
         link: function (scope, element, attributes) {
           scope.gram = JSON.parse(decodeURIComponent(attributes.data));
         }

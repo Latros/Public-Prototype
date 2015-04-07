@@ -7,7 +7,7 @@
         scope: {},
         replace: true,
         restrict: 'E',
-        templateUrl: '../html/partials/tweet-card.partial.html',
+        templateUrl: 'components/tweet-card/tweet-card.template.html',
         link: function (scope, element, attributes) {
           scope.tweet = JSON.parse(decodeURIComponent(attributes.data));
         }

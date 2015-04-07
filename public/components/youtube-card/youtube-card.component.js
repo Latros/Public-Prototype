@@ -8,7 +8,7 @@
       //       post: '=post'
       //     },
       //     restrict: 'E',
-      //     templateUrl: '../html/partials/blog-card.partial.html',
+      //     templateUrl: 'components/youtube-card/youtube-card.template.html',
       //     link: function (scope, element, attributes) {}
       //   };
     });

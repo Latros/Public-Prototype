@@ -5,7 +5,7 @@ module.exports = function (grunt) {
   var JSDependencies = ['public/dependencies/angular/angular.js', 'public/dependencies/angular-ui-router/release/angular-ui-router.js', 'public/dependencies/jquery/dist/jquery.js', 'public/dependencies/materialize/dist/js/materialize.js', 'public/dependencies/underscore/underscore-min.js', 'public/dependencies/masonry/dist/masonry.pkgd.min.js'];
 
   // CSS Imports
-  var CSSSource = ['public/css/**/*.less'];
+  var CSSSource = ['public/**/*.less', '!public/dependencies/**/*.less'];
   var CSSDependencies = ['public/dependencies/materialize/dist/css/materialize.css'];
 
   grunt.initConfig({

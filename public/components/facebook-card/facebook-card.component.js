@@ -8,7 +8,7 @@
       //       post: '=post'
       //     },
       //     restrict: 'E',
-      //     templateUrl: '../html/partials/blog-card.partial.html',
+      //     templateUrl: 'components/facebook-card/facebook-card.template.html',
       //     link: function (scope, element, attributes) {}
       //   };
     });

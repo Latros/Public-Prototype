@@ -9,7 +9,7 @@
         },
         replace: true,
         restrict: 'E',
-        templateUrl: '../html/partials/card-layout.partial.html',
+        templateUrl: 'components/card-layout/card-layout.template.html',
         link: function (scope, element, attributes) {
           scope.columnWidth = 300;
           scope.originalCards = _.clone(scope.cards);

@@ -6,7 +6,7 @@
 
       $stateProvider.state('index', {
         url: '/',
-        templateUrl: '/html/pages/index.page.html',
+        templateUrl: 'states/index/index.template.html',
         resolve: {
           tweets: function () {
             return [{

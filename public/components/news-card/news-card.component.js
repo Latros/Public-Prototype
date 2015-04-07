@@ -7,7 +7,7 @@
         scope: {},
         replace: true,
         restrict: 'E',
-        templateUrl: '../html/partials/news-card.partial.html',
+        templateUrl: 'components/news-card/news-card.template.html',
         link: function (scope, element, attributes) {
           scope.post = JSON.parse(decodeURIComponent(attributes.data));
         }
