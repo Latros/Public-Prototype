@@ -23,4 +23,5 @@
       $urlRouterProvider.otherwise('/');
       $sceProvider.enabled(false);
     });
+
 })();

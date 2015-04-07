@@ -229,6 +229,6 @@
           $scope.tweets = tweets;
         }
       });
-
     });
+
 })();
