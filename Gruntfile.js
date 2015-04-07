@@ -1,14 +1,22 @@
 module.exports = function (grunt) {
 
+  // JS imports
+  var JSSource = ['public/bootstrap/**/*.js', 'public/components/**/*.js', 'public/models/**/*.js', 'public/services/**/*.js', 'public/states/**/*.js'];
+  var JSDependencies = ['public/dependencies/angular/angular.js', 'public/dependencies/angular-ui-router/release/angular-ui-router.js', 'public/dependencies/jquery/dist/jquery.js', 'public/dependencies/materialize/dist/js/materialize.js', 'public/dependencies/underscore/underscore-min.js', 'public/dependencies/masonry/dist/masonry.pkgd.min.js'];
+
+  // CSS Imports
+  var CSSSource = ['public/css/**/*.less'];
+  var CSSDependencies = ['public/dependencies/materialize/dist/css/materialize.css'];
+
   grunt.initConfig({
 
     watch: {
       less: {
-        files: ['public/css/**/*.less'],
+        files: CSSSource,
         tasks: ['less']
       },
       js: {
-        files: ['public/js/**/*.js'],
+        files: JSSource,
         tasks: ['concat:dist']
       }
     },
@@ -26,21 +34,15 @@ module.exports = function (grunt) {
         separator: '\n\n// --------- Next import... ---------\n\n',
       },
       dist: {
-        src: ['public/js/init.js', 'public/js/**/*.js'],
+        src: JSSource,
         dest: 'public/concatenated/scripts.js'
       },
       jsDependencies: {
-        src: ['public/dependencies/angular/angular.js',
-          'public/dependencies/angular-ui-router/release/angular-ui-router.js',
-          'public/dependencies/jquery/dist/jquery.js',
-          'public/dependencies/materialize/dist/js/materialize.js',
-          'public/dependencies/underscore/underscore-min.js',
-          'public/dependencies/masonry/dist/masonry.pkgd.min.js'
-        ],
+        src: JSDependencies,
         dest: 'public/concatenated/dependencies.js'
       },
       cssDependencies: {
-        src: ['public/dependencies/materialize/dist/css/materialize.css'],
+        src: CSSDependencies,
         dest: 'public/concatenated/dependencies.css'
       }
     },
@@ -80,7 +82,7 @@ module.exports = function (grunt) {
       }
     },
 
-    clean: ['public/js/scripts.js', 'public/css/styles.css', 'public/font/**/*.*', 'public/concatenated/**/*.*']
+    clean: ['public/font/**/*.*', 'public/concatenated/**/*.*']
 
   });
 
