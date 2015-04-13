@@ -1,0 +1,14 @@
+<div class="instagram-card eyesover-card">
+  <i class="card-style valign-wrapper">
+    <i class="fa fa-instagram valign"></i>
+  </i>
+  <div class="card">
+    <div class="card-image">
+      <img ng-src="{{ gram.imageUrl }}">
+      <span class="card-title"><a href="gram.profileUrl">{{ gram.username }}</a> <span class="card-timestamp">{{ gram.dateSubmitted }}</span></span>
+    </div>
+    <div class="card-content">
+      <p ng-bind-html="gram.content"></p>
+    </div>
+  </div>
+</div>

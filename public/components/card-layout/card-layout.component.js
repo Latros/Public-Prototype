@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('Prototype')
-    .directive('cardLayout', function ($compile) {
+    .directive('cardLayout', function ($compile, $timeout) {
       return {
         scope: {
           cards: '=cards'
@@ -11,7 +11,7 @@
         restrict: 'E',
         templateUrl: 'components/card-layout/card-layout.template.html',
         link: function (scope, element, attributes) {
-          scope.columnWidth = 300;
+          scope.columnWidth = 400;
           scope.originalCards = _.clone(scope.cards);
           scope.board = angular.element(element[0]);
 
@@ -37,15 +37,13 @@
 
           scope.render();
 
-          setTimeout(function () {
+          $timeout(function () {
             var msnry = new Masonry(scope.board[0], {
               itemSelector: '.eyesover-card',
               gutter: 30,
               columnWidth: scope.columnWidth
             });
-
-            console.log(msnry);
-          }, 2000);
+          }, 1000);
         }
       };
     });

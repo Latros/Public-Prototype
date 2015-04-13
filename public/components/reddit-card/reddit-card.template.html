@@ -1,0 +1,23 @@
+<div class="reddit-card eyesover-card">
+  <i class="card-style valign-wrapper">
+    <img src="images/reddit-alien.png" alt="Reddit Logo">
+  </i>
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title grey-text text-darken-4">
+        <div class="reddit-card-title">
+          <div class="twc-left">
+            <h5 class="username">{{ post.username }}</h5>
+          </div>
+          <div class="twc-right">
+            <a href="#"><i class="fa fa-external-link"></i> Post</a>
+            <a href="#"><i class="fa fa-external-link"></i> Comment</a>
+          </div>
+        </div>
+      </span>
+      <div class="post-contents">
+        <p ng-bind-html="post.content"></p>
+      </div>
+    </div>
+  </div>
+</div>

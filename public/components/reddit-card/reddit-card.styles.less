@@ -1,0 +1,57 @@
+.reddit-card {
+  position: relative;
+
+  .card-style {
+    background: @reddit-blue;
+    position: absolute;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+    left: -12px;
+    top: 4px;
+
+    img {
+      max-height: 30px;
+      max-width: 30px;
+      color: @black;
+    }
+  }
+
+  .card {
+
+    a {
+    }
+
+    .card-content {
+      font: small verdana, arial, helvetica, sans-serif !important;
+
+      .card-title {
+        h5 {
+          margin: 0;
+          padding: 0;
+        }
+
+        a {
+          margin: 0;
+          text-transform: none;
+        }
+
+        .twc-left, .twc-right {
+          display: inline-block;
+          vertical-align: top;
+        }
+
+        .twc-left {
+          font-size: 20px;
+        }
+
+        .twc-right {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
