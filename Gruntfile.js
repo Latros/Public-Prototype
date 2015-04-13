@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
   // JS imports
-  var JSSource = ['public/bootstrap/**/*.js', 'public/components/**/*.js', 'public/models/**/*.js', 'public/services/**/*.js', 'public/states/**/*.js'];
+  var JSSource = ['public/bootstrap/**/*.js', 'public/components/**/*.js', 'public/models/**/*.js', 'public/services/**/*.js', 'public/states/**/*.js', 'public/util/prototypes.js'];
   var JSDependencies = ['public/dependencies/angular/angular.js', 'public/dependencies/angular-ui-router/release/angular-ui-router.js', 'public/dependencies/jquery/dist/jquery.js', 'public/dependencies/materialize/dist/js/materialize.js', 'public/dependencies/underscore/underscore-min.js', 'public/dependencies/masonry/dist/masonry.pkgd.min.js'];
 
   // CSS Imports
