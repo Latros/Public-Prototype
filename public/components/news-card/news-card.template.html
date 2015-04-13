@@ -9,7 +9,7 @@
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">
         <span class="card-source-domain">via <a ng-href="//www.{{ post.sourceDomain }}">{{ post.sourceDomain }}</a></span>
-        <span ng-bind-html="post.shortTitle"></span>
+        <p class="card-short-title" ng-bind-html="post.shortTitle"></p>
         <i class="mdi-navigation-more-vert right"></i>
       </span>
       <p ng-bind-html="post.shortContent"></p>
@@ -21,12 +21,14 @@
       </span>
       <div ng-bind-html="post.content"></div>
       <div class="card-actions">
-        <div class="card-actions-left">
-          <a ng-href="{{ post.sourceUrl }}" target="_blank" class="waves-effect waves-light btn primary-color white-text">Article Source</a>
-        </div>
-        <div class="card-actions-divider"></div>
-        <div class="card-actions-right">
-          <a href="#" class="dropdown-button btn waves-light primary-color waves-effect white-text"><i class="mdi-social-share left"></i>Share</a>
+        <div class="actions-wrapper">
+          <div class="card-actions-left">
+            <a ng-href="{{ post.sourceUrl }}" target="_blank" class="waves-effect waves-light btn primary-color white-text"><i class="fa fa-external-link"></i> Source</a>
+          </div>
+          <div class="card-actions-divider"></div>
+          <div class="card-actions-right">
+            <a href="#" class="share-button btn waves-light primary-color waves-effect white-text"><i class="mdi-social-share left"></i>Share</a>
+          </div>
         </div>
       </div>
     </div>

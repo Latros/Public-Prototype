@@ -11,7 +11,7 @@
         restrict: 'E',
         templateUrl: 'components/card-layout/card-layout.template.html',
         link: function (scope, element, attributes) {
-          scope.columnWidth = 400;
+          scope.columnWidth = 300;
           scope.originalCards = _.clone(scope.cards);
           scope.board = angular.element(element[0]);
 

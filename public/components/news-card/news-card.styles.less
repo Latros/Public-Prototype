@@ -38,31 +38,58 @@
 
     .card-actions {
 
-      .card-actions-left, .card-actions-right, .card-actions-divider {
-        display: inline-block;
-        vertical-align: top;
-      }
+      .actions-wrapper {
+        text-align: center;
 
-      .card-actions-divider {
-        border-right: 1px solid darken(white, 20%);
-        margin-right: 20px;
-        height: 35px;
-        width: 1px;
+        .card-actions-left, .card-actions-right, .card-actions-divider {
+          display: inline-block;
+          vertical-align: top;
+
+          a.btn {
+            font-size: 12px;
+            padding: 0 15px;
+            margin-right: 10px !important;
+            vertical-align: top;
+
+            &.share-button {
+              margin-right: 0 !important;
+            }
+          }
+
+          i {
+            margin: 0 10px 0 0 ;
+            font-size: 16px !important;
+          }
+        }
+
+        .card-actions-divider {
+          border-right: 1px solid darken(white, 20%);
+          margin-right: 10px !important;
+          height: 35px;
+          width: 1px;
+        }
       }
     }
   }
 
   .card-content {
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px;
 
     .card-title {
+
+      .card-short-title {
+        line-height: 32px;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+      }
 
       .card-source-domain {
         position: relative;
         line-height: 10px;
         font-size: 10px;
         display: block;
-        top: 5px;
+        top: -5px;
 
         a {
           text-transform: none;
