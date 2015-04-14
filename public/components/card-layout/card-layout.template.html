@@ -1,1 +1,131 @@
-<div class="card-layout"></div>
+<div class="card-layout">
+  <div ng-repeat="card in cards">
+
+    <!-- Instagram -->
+    <div class="instagram-card eyesover-card" ng-if="card.type === 'instagram'">
+      <i class="card-style valign-wrapper">
+        <i class="fa fa-instagram valign"></i>
+      </i>
+      <div class="card">
+        <div class="card-image">
+          <img ng-src="{{ card.imageUrl }}">
+          <span class="card-title"><a href="card.profileUrl">{{ card.username }}</a> <span class="card-timestamp">{{ card.dateSubmitted }}</span></span>
+        </div>
+        <div class="card-content">
+          <p ng-bind-html="card.content"></p>
+        </div>
+      </div>
+    </div>
+    <!-- /Instagram -->
+
+    <!-- Reddit -->
+    <div class="reddit-card eyesover-card" ng-if="card.type === 'reddit'">
+      <i class="card-style valign-wrapper">
+        <img src="images/reddit-alien.png" alt="Reddit Logo">
+      </i>
+      <div class="card">
+        <div class="card-content">
+          <div class="post-contents">
+            <p ng-bind-html="card.content"></p>
+          </div>
+          <h5 class="username"><a href="{{ card.profileUrl }}">- {{ card.username }}</a></h5>
+        </div>
+        <div class="card-action">
+          <div class="rc-left">
+            <a href="#" class="btn-flat waves-effect upvote"><img src="../images/reddit-upvote.png" alt="Reddit Upvote"></a>
+            <a href="#" class="btn-flat waves-effect downvote"><img src="../images/reddit-downvote.png" alt="Reddit Downvote"></a>
+          </div>
+          <div class="rc-right right">
+            <a href="{{ card.postUrl }}" target="_blank" class="btn primary-color waves-effect"><i class="fa fa-external-link"></i> <span>Post</span></a>
+            <a href="{{ card.commentUrl }}" target="_blank" class="comment btn primary-color waves-effect"><i class="fa fa-external-link"></i> <span>Comment</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Reddit -->
+
+    <!-- Facebook -->
+    <div class="facebook-card eyesover-card" ng-if="card.type === 'facebook'"></div>
+    <!-- /Facebook -->
+
+    <!-- News -->
+    <div class="news-card eyesover-card" ng-if="card.type === 'news'">
+      <i class="card-style valign-wrapper">
+        <i class="fa fa-rss valign"></i>
+      </i>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" ng-src="{{ card.primaryImageLarge }}">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">
+            <span class="card-source-domain">via <a ng-href="//www.{{ card.sourceDomain }}">{{ card.sourceDomain }}</a></span>
+            <p class="card-short-title" ng-bind-html="card.shortTitle"></p>
+            <i class="mdi-navigation-more-vert right"></i>
+          </span>
+          <p ng-bind-html="card.shortContent"></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">
+            <span ng-bind-html="card.title"></span>
+            <i class="mdi-navigation-close right"></i>
+          </span>
+          <div ng-bind-html="card.content"></div>
+          <div class="card-actions">
+            <div class="actions-wrapper">
+              <div class="card-actions-left">
+                <a ng-href="{{ card.sourceUrl }}" target="_blank" class="waves-effect waves-light btn primary-color white-text"><i class="fa fa-external-link"></i> Source</a>
+              </div>
+              <div class="card-actions-divider"></div>
+              <div class="card-actions-right">
+                <a href="#" class="share-button btn waves-light primary-color waves-effect white-text"><i class="mdi-social-share left"></i>Share</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /News -->
+
+    <!-- YouTube -->
+    <div class="youtube-card eyesover-card" ng-if="card.type === 'youtube'"></div>
+    <!-- /YouTube -->
+
+    <!-- Twitter -->
+    <div class="tweet-card eyesover-card" ng-if="card.type === 'twitter'">
+      <i class="card-style valign-wrapper">
+        <i class="fa fa-twitter valign"></i>
+      </i>
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">
+            <div class="twitter-card-title">
+              <div class="twc-left">
+                <img ng-src="{{ card.profileImageUrl }}" alt="">
+              </div>
+              <div class="twc-right">
+                <h5 class="username">{{ card.username }}</h5>
+                <span class="handle">{{ card.handle }}</span>
+              </div>
+            </div>
+          </span>
+          <div class="tweet-contents">
+            <p ng-bind-html="card.content"></p>
+          </div>
+        </div>
+        <div class="card-action">
+          <div class="twc-left-actions">
+            <span>{{ card.dateSubmitted }}</span>
+          </div>
+          <div class="twc-right-actions right">
+            <a class="btn-flat waves-effect" href="#"><i class="fa fa-reply"></i></a>
+            <a class="btn-flat waves-effect" href="#"><i class="fa fa-retweet"></i></a>
+            <a class="btn-flat waves-effect" href="#"><i class="fa fa-star"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Twitter -->
+
+  </div>
+</div>

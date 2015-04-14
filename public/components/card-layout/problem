@@ -1,0 +1,34 @@
+okay I'm going to write this out so I can wrap my head around it better. this is NOT an easy UI problem to solve.
+
+#### The Board ####
+
+The board is an instagram style board layout engine containing social media posts. Each social media post is represented as a "card" on this board. The board has columns, which are 300 px wide.
+
+The board has to:
+     - automatically figure out how many columns are needed based on the screen width
+     - automatically "place" cards in the column that seems most appropriate (based on other columns heights)
+
+     ****************
+
+     This is the piece that is giving me a huge headache.
+
+     I can get it to layout fine, but if I attempt to filter any cards out, it basically implodes due to limitations of using the Masonry library in an angular context.
+
+     A promising resolution was the angular-masonry plugin, which wraps the masonry plugin in an angular directive to make it more friendly to work with in an angular ecosystem, but that turned out to be fruitless as the library is broken: https://github.com/passy/angular-masonry/issues/100
+
+     - NEEDS TO HANDLE THE FILTER CASES. If the user decides they only want to see stuff about "Justin Trudeau", the board needs to filter out any that are not about justin trudeau, and then it needs to RE-ARRANGE the columns to account for the newly empty spaces
+     *****************
+
+
+#### The Cards ####
+
+Each card has its own featureset depending on which media site it's from.
+
+- The news/RSS card lets you expand the preview to see the entire card inline.
+- The reddit card lets you see the original post, the original comment context, other comments on the thread, and upvote/downvote.
+- The facebook card lets you see the original post, other comments on the threat, and like/comment.
+- The instagram card lets you go to the posters profile and see the original image (maybe favoriting? is that a thing? I dont use instagram)
+- The youtube card lets you view the video inline, and like/dislike/favorite the video
+- The twitter card lets you reply/retweet/favorite
+
+BECAUSE OF the clear distinction in featureset for each of these "card types", an angular directive for each one seems highly appropriate. This is how I have it set up currently as seen in my folder structure on the left... the angular components directory contains a folder for each directive ([social media site]-card), and that directory contains: all of the styling for each component, all of the html for each component, and the component JS logic itself.
