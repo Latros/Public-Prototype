@@ -13,6 +13,8 @@
         link: function (scope, element, attributes) {
           scope.columnWidth = 400;
 
+          scope.searchText = '';
+
           $timeout(function () {
             var msnry = new Masonry(angular.element(element[0])[0], {
               itemSelector: '.eyesover-card',
